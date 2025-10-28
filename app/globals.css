@@ -1,12 +1,21 @@
+/* Nuevo código para la fuente personalizada */
+@font-face {
+  font-family: 'XsqMiFont'; /* El nombre que usarás en font-family */
+  src: url('/fonts/XsqMiFontBlack.otf') format('opentype'); /* Ruta relativa a la carpeta public */
+  font-weight: 900; /* Asigna un peso (Black suele ser un peso alto) */
+  font-style: normal;
+  font-display: swap; /* Permite que el texto sea visible mientras se carga la fuente */
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
 
@@ -17,9 +26,10 @@ body {
 }
 
 body {
+  /* ¡Aquí aplicamos la fuente! */
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'XsqMiFont', Arial, Helvetica, sans-serif; /* Agrega tu fuente al inicio de la pila */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

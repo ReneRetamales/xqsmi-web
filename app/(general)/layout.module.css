@@ -1,0 +1,33 @@
+.layout {
+  display: grid;
+  grid-template-rows: 12fr 1fr;
+  height: 100vh;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: yellow;
+  align-items: center;
+}
+.navbar {
+  background-color: orange;
+  height: 100%;
+  width: 100%;
+  text-align: end;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}

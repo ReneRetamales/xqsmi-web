@@ -1,0 +1,27 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #A760FF;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  margin-left: 1rem;
+  display: flex;
+  text-align: left;
+  align-self: center;
+}
+
+.copyright {
+  text-align: center;
+  align-self: center;
+}
+
+.links {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: center;
+}
