@@ -52,3 +52,80 @@
   transform: scale(1.05);
   z-index: 10;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .title {
+    font-size: 40px; /* Un poco más pequeño */
+  }
+
+  .links {
+    gap: 3rem; /* Reduce el espacio entre enlaces */
+    font-size: 28px; /* Un poco más pequeño */
+  }
+
+}
+
+/* ====================================================== */
+/* MEDIA QUERY: TABLET VERTICAL Y MÓVIL GRANDE (< 768px)  */
+/* ====================================================== */
+@media screen and (max-width: 768px) {
+  
+  .section {
+    /* CAMBIO CLAVE: Usa 1fr para una sola columna */
+    grid-template-columns: 1fr;
+    /* Ya no necesita 100% de altura, se adapta al contenido */
+    height: auto; 
+  }
+
+  .space {
+    /* Hacemos que la columna "space" no ocupe espacio visible */
+    display: none; 
+  }
+
+  .content {
+    /* Elimina el margen lateral que ahora maneja el padding del body si lo tienes */
+    margin: 1rem 0; 
+  }
+
+  .title {
+    font-size: 32px; /* Un tamaño más adecuado para tablets */
+  }
+
+  .links {
+    /* Los enlaces siguen en línea, pero con menos separación */
+    gap: 2rem; 
+    font-size: 24px;
+  }
+}
+
+/* ====================================================== */
+/* MEDIA QUERY: MÓVIL ESTÁNDAR Y PEQUEÑO (< 480px)        */
+/* ====================================================== */
+@media screen and (max-width: 480px) {
+
+  .title {
+    font-size: 24px; /* Títulos pequeños y concisos */
+  }
+  
+  .content {
+    /* Más padding en los lados si es necesario, pero usa unidades relativas */
+    margin: 0.5rem;
+  }
+
+  .links {
+    /* CAMBIO CLAVE: Convierte el flexbox en columna para apilar los enlaces */
+    /* flex-direction: column;  */
+    justify-content: space-between;
+    gap: 0.5rem; /* Espacio mínimo entre enlaces apilados */
+    font-size: 24px; /* Texto estándar para móviles */
+  }
+
+  .navLink {
+    /* Asegura que cada enlace ocupe todo el ancho para facilitar el toque */
+    padding: 0.5rem 0; 
+    /* border-bottom: 1px solid #eee; */
+  }
+}

@@ -35,3 +35,17 @@
   height: 100%;
   width: 100%;
 }
+
+
+/* ejemplo solo para poder ver si en telefono se desactiva el navbar */
+@media screen and (max-width: 480px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .navbar {
+    display: none;
+  }
+}
