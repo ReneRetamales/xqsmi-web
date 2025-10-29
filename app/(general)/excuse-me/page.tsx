@@ -13,7 +13,7 @@ export default function ExcuseMePage() {
       <div className={styles.space}></div>
 
       <div className={styles.content}>
-        <span className={styles.title}>XqsMi = Excuse Me</span>
+        <h1 className={styles.title}>XqsMi = Excuse Me</h1>
         <span className={styles.text}>
           En realidad, me encontraba sentado frente a la pantalla del
           computador. Estaba disociado.
@@ -40,7 +40,7 @@ export default function ExcuseMePage() {
           “Excuse me” resonó en mi cabeza, y fue el único momento en que pude
           abrazarme con sinceridad, sin dureza. No recuerdo mucho más, solo sé
           que XqsMi nació de ese instante de honestidad, cuando dejé de exigirme
-          tanto y me acepté como era. Fue un momento de paz. Un agradecimiento
+          tanto y me acepté tal y como era. Fue un momento de paz. Un agradecimiento
           hacia mí mismo.
         </span>
         <span className={styles.signature}>- XqsMi</span>

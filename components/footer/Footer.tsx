@@ -1,12 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import xqsmiLogo from "../../public/images/XMLogo.png";
 import ytmusicLogo from "../../public/images/YTMusic.png";
 import spotifyLogo from "../../public/images/Spotify.png";
 import applemusicLogo from "../../public/images/AppleMusic.png";
 import tidalLogo from "../../public/images/Tidal.png";
-
 import styles from "./Footer.module.css";
 
 const navItems = [

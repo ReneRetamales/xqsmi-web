@@ -1,10 +1,13 @@
 .link {
-  background-color: tomato;
+  /* background-color: tomato; */
   padding: 0.5rem;
+  color: #303030;
 }
 
 .active-link {
-  background-color: green;
+  /* background-color: green; */
   text-align: center;
   font-weight: bold;
+  color: #000000;
+  font-size: 36px;
 }
