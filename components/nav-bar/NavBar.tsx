@@ -14,9 +14,7 @@ export const NavBar = async () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.title}>
-        <Link href="/">
-          <span>XqsMi</span>
-        </Link>
+        <span>XqsMi</span>
       </div>
 
       <div className={styles.sections}>

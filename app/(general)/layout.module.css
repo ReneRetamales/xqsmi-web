@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-template-rows: 12fr 1fr;
+  grid-template-rows: 11fr 1fr;
   height: 100vh;
 }
 
@@ -29,5 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
   background-color: black;
 }

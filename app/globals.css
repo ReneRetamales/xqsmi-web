@@ -32,6 +32,7 @@ body {
   font-family: 'XsqMiFont', Arial, Helvetica, sans-serif; /* Agrega tu fuente al inicio de la pila */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #000000;
 }
 
 * {

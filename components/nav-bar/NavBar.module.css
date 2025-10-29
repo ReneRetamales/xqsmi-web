@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   align-items: center;
@@ -6,13 +6,42 @@
   width: 100%;
   height: 100%;
   padding: 1rem;
-  border-right: 2px solid black;
+  border-right: 1px solid black;
+} */
+
+.navbar {
+  /* Mantenemos tus propiedades de diseño */
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  align-items: center;
+  background-color: greenyellow;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+
+  /* Necesario para posicionar el borde parcial */
+  position: relative;
+}
+
+.navbar::after {
+  content: "";
+
+  /* Estilo y posicionamiento del "borde" */
+  position: absolute;
+  width: 1px; /* Grosor */
+  background-color: black; /* Color */
+  right: 0; /* Pégalo al borde derecho */
+
+  /* ⭐️ CAMBIOS CLAVE PARA EL 85% ⭐️ */
+  top: 7.5%; /* Inicia 7.5% desde arriba para centrar */
+  height: 85%; /* La longitud del borde es del 85% */
 }
 
 .title {
   font-size: 64px;
   font-weight: bold;
   text-align: center;
+  user-select: none;
 }
 
 .sections {

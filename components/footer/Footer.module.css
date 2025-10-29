@@ -1,27 +1,30 @@
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #A760FF;
+  grid-template-columns: 1fr 4fr 1fr;
+  background-color: #a760ff;
   width: 100%;
   height: 100%;
+  user-select: none;
 }
 
 .logo {
-  margin-left: 1rem;
+  margin-left: 3rem;
   display: flex;
   text-align: left;
   align-self: center;
 }
 
 .copyright {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  font-size: 10px;
   align-self: center;
+  user-select: none;
 }
 
 .links {
-  margin-right: 1rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 2rem;
   align-items: center;
 }

@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "XqsMi | Sitio Web Oficial",
-  description: "Página web oficial de XqsMi",
+  description: "Sitio web oficial de XqsMi",
 };
 
 export default function RootLayout({
