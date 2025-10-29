@@ -23,7 +23,16 @@
   font-size: 64px;
   font-weight: bold;
   text-align: center;
-  user-select: none;
+}
+
+.artistName {
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.artistName:hover {
+  transform: scale(1.05);
+  z-index: 10;
 }
 
 .sections {

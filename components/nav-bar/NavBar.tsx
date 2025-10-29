@@ -14,12 +14,12 @@ export const NavBar = async () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.title}>
-        <span>XqsMi</span>
+        <span className={styles.artistName}>XqsMi</span>
       </div>
 
       <div className={styles.sections}>
         {navItems.map((navItem) => (
-          <ActiveLink key={navItem.path} {...navItem} />
+            <ActiveLink key={navItem.path} {...navItem} />
         ))}
       </div>
 

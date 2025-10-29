@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import styles from "./page.module.css";
 import singleCover from "../../../public/images/FloresYPerdonesCover.png";
 import epCover from "../../../public/images/EspejismosCover.png";
-import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "XqsMi | Música",
@@ -31,20 +31,20 @@ const linkItemsSingle = [
 
 const linkItemsEp = [
   {
-    url: "https://www.youtube.com/channel/UCZdqgNaM6wYjNcwvOfEqZLg",
-    text: "youtube",
-  },
-  {
-    url: "https://music.youtube.com/channel/UCKxDEtNl5qBPjFiEsCfZWbg",
+    url: "https://music.youtube.com/playlist?list=OLAK5uy_miaT0lDySRrF8gxszGisD0fD0b2hir6XE&si=10JAHddOAx9vBZlY",
     text: "ytmusic",
   },
   {
-    url: "https://open.spotify.com/intl-es/artist/0zzc0r0CLFvWCIJE8mvUIw",
+    url: "https://open.spotify.com/intl-es/track/1zEYL5afjQZ9N8J0aJf2ry?si=d91532ad2f6f4938",
     text: "spotify",
   },
   {
-    url: "https://music.apple.com/cl/artist/xqsmi/1844206979",
+    url: "https://music.apple.com/cl/song/flores-y-perdones/1845943167",
     text: "apple music",
+  },
+  {
+    url: "https://tidal.com/album/466605291/u",
+    text: "tidal",
   },
 ];
 
@@ -73,15 +73,15 @@ export default function MusicaPage() {
                 <span>Escuchar en:</span>
               </div>
               <div className={styles.linkItems}>
-                {linkItemsSingle.map((linkItem) => (
+                {linkItemsSingle.map((linkItemSingle) => (
                   <a
-                    key={linkItem.url}
-                    href={linkItem.url}
+                    className={styles.navLink}
+                    key={linkItemSingle.url}
+                    href={linkItemSingle.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.navLink}
                   >
-                    {linkItem.text}
+                    {linkItemSingle.text}
                   </a>
                 ))}
               </div>
@@ -100,15 +100,15 @@ export default function MusicaPage() {
                 <span>Escuchar en:</span>
               </div>
               <div className={styles.linkItems}>
-                {linkItemsSingle.map((linkItem) => (
+                {linkItemsEp.map((linkItemEp) => (
                   <a
-                    key={linkItem.url}
-                    href={linkItem.url}
+                    className={styles.navLink}
+                    key={linkItemEp.url}
+                    href={linkItemEp.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.navLink}
                   >
-                    {linkItem.text}
+                    {linkItemEp.text}
                   </a>
                 ))}
               </div>

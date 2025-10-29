@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const linkItems = [
   {
-    url: "https://www.youtube.com/channel/UCZdqgNaM6wYjNcwvOfEqZLg",
+    url: "https://www.youtube.com/watch?v=l1c62LuLg7I",
     text: "youtube",
   },
   {
@@ -48,11 +48,11 @@ export default function InicioPage() {
         <div className={styles.links}>
           {linkItems.map((linkItem) => (
             <a
+              className={styles.navLink}
               key={linkItem.url}
               href={linkItem.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.navLink}
             >
               {linkItem.text}
             </a>

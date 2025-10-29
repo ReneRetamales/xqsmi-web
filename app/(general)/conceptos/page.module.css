@@ -1,35 +1,40 @@
 .section {
+  /* background-color: aqua; */
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  background-color: aqua;
 }
 
 .space {
-  background-color: lightpink;
+  /* background-color: lightpink; */
 }
 
 .content {
+  /* background-color: lightgreen; */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: lightgreen;
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  justify-content: space-between;
+  align-items: center;
   margin: 1rem;
-  gap: 2rem;
 }
-.title {
-  background-color: limegreen;
-  width: 100%;
-  font-size: 48px;
+.concepts {
+  position: relative;
+  width: 30%;
+  height: 20%;
+  overflow: hidden;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease;
+  display: block;
 }
-.text {
-  font-size: 24px;
-  background-color: maroon;
+
+.concepts:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
-.signature {
-  width: 100%;
-  text-align: end;
-  font-size: 24px;
-  font-style: italic;
+
+.concept {
+  object-fit: cover;
 }

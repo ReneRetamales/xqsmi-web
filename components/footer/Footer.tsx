@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "./Footer.module.css";
 import xqsmiLogo from "../../public/images/XMLogo.png";
 import ytmusicLogo from "../../public/images/YTMusic.png";
 import spotifyLogo from "../../public/images/Spotify.png";
 import applemusicLogo from "../../public/images/AppleMusic.png";
 import tidalLogo from "../../public/images/Tidal.png";
-import styles from "./Footer.module.css";
 
 const navItems = [
   {
@@ -35,9 +35,10 @@ export const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.logo}>
+      <div className={styles.logoContainer}>
         <Link href="/">
           <Image
+            className={styles.logo}
             src={xqsmiLogo}
             alt="XqsMi Logo"
             width={iconSize}
@@ -57,7 +58,7 @@ export const Footer = () => {
             href={navItem.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.navLink}
+            className={styles.socialLink}
           >
             <Image
               src={navItem.image}
