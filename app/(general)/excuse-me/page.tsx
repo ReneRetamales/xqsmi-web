@@ -31,7 +31,10 @@ export default function ExcuseMePage() {
           </div>
           <div>“Excuse me."</div>
           <div>Disculpa. Discúlpame.</div>
-          <div>Me lo decía a mí mismo. No quería volver a abandonarme.</div>
+          <div>
+            Me lo dije a mí mismo porque me abandoné, y no quería volver a
+            hacerlo.
+          </div>
         </span>
         <span className={styles.text}>
           “Excuse me” resonó en mi cabeza, y fue el único momento en que pude
