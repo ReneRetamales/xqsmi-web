@@ -7,7 +7,6 @@
 
 }
 .content {
-  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   justify-content: center;

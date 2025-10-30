@@ -1,69 +1,65 @@
-.navbar {
-  /* background-color: greenyellow; */
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  position: relative;
+/* Media Query: Móbiles Pequeños 320p */
+
+/* Media Query: Móbiles Grandes 480p */
+@media screen and (min-width: 480px) {
 }
 
-.navbar::after {
-  background-color: black;
-  content: "";
-  position: absolute;
-  width: 1px;
-  right: 0;
-  top: 7.5%;
-  height: 85%;
+/* Media Query: Tablets 768p */
+@media screen and (min-width: 768px) {
 }
 
-.title {
-  font-size: 64px;
-  font-weight: bold;
-  text-align: center;
+/* Media Query: Laptops 1024p */
+@media screen and (min-width: 1024px) {
 }
 
-.artistName {
-  transition: transform 0.3s ease;
-  display: block;
+/* Media Query: Desktop FullHD 1280p */
+@media screen and (min-width: 1280px) {
 }
 
-.artistName:hover {
-  transform: scale(1.05);
-  z-index: 10;
-}
-
-.sections {
-  display: flex;
-  flex-direction: column;
-  font-size: 32px;
-  gap: 1rem;
-  justify-content: center;
-}
-
-/* ====================================================== */
-/* MEDIA QUERY: TABLET HORIZONTAL Y LAPTOP PEQUEÑA (< 1025px) */
-/* ====================================================== */
-@media screen and (max-width: 1024px) {
-}
-
-/* ====================================================== */
-/* MEDIA QUERY: TABLET VERTICAL Y MÓVIL GRANDE (< 768px)  */
-/* ====================================================== */
-@media screen and (max-width: 768px) {
-}
-
-/* ====================================================== */
-/* MEDIA QUERY: MÓVIL ESTÁNDAR Y PEQUEÑO (< 480px)        */
-/* ====================================================== */
-@media screen and (max-width: 480px) {
+/* Media Query: Desktop Grandes 1440p o 1920p */
+@media screen and (min-width: 1440px) {
   .navbar {
-    display: flex;
+    /* background-color: greenyellow; */
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    position: relative;
   }
+
+  .navbar::after {
+    background-color: black;
+    content: "";
+    position: absolute;
+    width: 1px;
+    right: 0;
+    top: 7.5%;
+    height: 85%;
+  }
+
+  .title {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .artistName {
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .artistName:hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
+
   .sections {
     display: flex;
-    font-size: 12px;
+    flex-direction: column;
+    font-size: 32px;
+    gap: 1rem;
+    justify-content: center;
   }
 }
