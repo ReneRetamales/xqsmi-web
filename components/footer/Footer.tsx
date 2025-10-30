@@ -54,11 +54,11 @@ export const Footer = () => {
       <div className={styles.links}>
         {navItems.map((navItem) => (
           <a
+            className={styles.socialLink}
             key={navItem.url}
             href={navItem.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.socialLink}
           >
             <Image
               className={styles.iconSize}

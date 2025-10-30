@@ -36,7 +36,7 @@ export default function InicioPage() {
       <div className={styles.content}>
         <h1 className={styles.title}>Ya puedes escuchar Flores Y Perdones!</h1>
 
-        <ReactPlayer
+        {/* <ReactPlayer
           className={styles.player}
           src="https://www.youtube.com/watch?v=l1c62LuLg7I"
           controls={true}
@@ -57,7 +57,7 @@ export default function InicioPage() {
               {linkItem.text}
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.space}></div>
