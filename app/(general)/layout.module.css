@@ -36,15 +36,41 @@
   width: 100%;
 }
 
+/* ====================================================== */
+/* MEDIA QUERY: TABLET HORIZONTAL Y LAPTOP PEQUEÑA (< 1025px) */
+/* ====================================================== */
+@media screen and (max-width: 1024px) {
+}
 
-/* ejemplo solo para poder ver si en telefono se desactiva el navbar */
+/* ====================================================== */
+/* MEDIA QUERY: TABLET VERTICAL Y MÓVIL GRANDE (< 768px)  */
+/* ====================================================== */
+@media screen and (max-width: 768px) {
+}
+
+/* ====================================================== */
+/* MEDIA QUERY: MÓVIL ESTÁNDAR Y PEQUEÑO (< 480px)        */
+/* ====================================================== */
 @media screen and (max-width: 480px) {
+  .layout {
+    display: grid;
+    grid-template-rows: 11fr 1fr;
+    height: 100vh;
+  }
   .content {
+    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
-  
-  
+  .main {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
   .navbar {
     display: none;
   }

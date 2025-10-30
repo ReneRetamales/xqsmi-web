@@ -61,6 +61,7 @@ export const Footer = () => {
             className={styles.socialLink}
           >
             <Image
+              className={styles.iconSize}
               src={navItem.image}
               alt={navItem.text}
               width={iconSize}

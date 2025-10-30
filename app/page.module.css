@@ -6,3 +6,30 @@
   font-size: 96px;
   height: 100vh;
 }
+
+/* ====================================================== */
+/* MEDIA QUERY: TABLET HORIZONTAL Y LAPTOP PEQUEÑA (< 1025px) */
+/* ====================================================== */
+@media screen and (max-width: 1024px) {
+  .intro {
+    font-size: 64px;
+  }
+}
+
+/* ====================================================== */
+/* MEDIA QUERY: TABLET VERTICAL Y MÓVIL GRANDE (< 768px)  */
+/* ====================================================== */
+@media screen and (max-width: 768px) {
+  .intro {
+    font-size: 48px;
+  }
+}
+
+/* ====================================================== */
+/* MEDIA QUERY: MÓVIL ESTÁNDAR Y PEQUEÑO (< 480px)        */
+/* ====================================================== */
+@media screen and (max-width: 480px) {
+  .intro {
+    font-size: 40px;
+  }
+}

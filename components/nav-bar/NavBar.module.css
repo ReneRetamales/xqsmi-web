@@ -42,3 +42,28 @@
   gap: 1rem;
   justify-content: center;
 }
+
+/* ====================================================== */
+/* MEDIA QUERY: TABLET HORIZONTAL Y LAPTOP PEQUEÑA (< 1025px) */
+/* ====================================================== */
+@media screen and (max-width: 1024px) {
+}
+
+/* ====================================================== */
+/* MEDIA QUERY: TABLET VERTICAL Y MÓVIL GRANDE (< 768px)  */
+/* ====================================================== */
+@media screen and (max-width: 768px) {
+}
+
+/* ====================================================== */
+/* MEDIA QUERY: MÓVIL ESTÁNDAR Y PEQUEÑO (< 480px)        */
+/* ====================================================== */
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: flex;
+  }
+  .sections {
+    display: flex;
+    font-size: 12px;
+  }
+}
