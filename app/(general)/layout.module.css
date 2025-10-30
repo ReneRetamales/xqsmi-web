@@ -46,6 +46,9 @@
 /* MEDIA QUERY: TABLET VERTICAL Y MÓVIL GRANDE (< 768px)  */
 /* ====================================================== */
 @media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
 }
 
 /* ====================================================== */
@@ -64,14 +67,12 @@
     align-items: center;
   }
   .main {
-    background-color: lightgray;
+    /* background-color: lightgray; */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
   }
-  .navbar {
-    display: none;
-  }
+  
 }
