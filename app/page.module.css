@@ -1,35 +1,50 @@
+/* Media Query: Móbiles Pequeños 320p */
 .intro {
   display: flex;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  font-size: 96px;
-  height: 100vh;
+  font-size: 32px;
+  height: 100dvh;
+  background-color: aqua;
 }
 
-/* ====================================================== */
-/* MEDIA QUERY: TABLET HORIZONTAL Y LAPTOP PEQUEÑA (< 1025px) */
-/* ====================================================== */
-@media screen and (max-width: 1024px) {
+/* Media Query: Móbiles Grandes 480p */
+@media screen and (min-width: 480px) {
   .intro {
-    font-size: 64px;
+    font-size: 36px;
+    background-color: red;
   }
 }
 
-/* ====================================================== */
-/* MEDIA QUERY: TABLET VERTICAL Y MÓVIL GRANDE (< 768px)  */
-/* ====================================================== */
-@media screen and (max-width: 768px) {
+/* Media Query: Tablets 768p */
+@media screen and (min-width: 768px) {
   .intro {
     font-size: 48px;
+    background-color: green;
   }
 }
 
-/* ====================================================== */
-/* MEDIA QUERY: MÓVIL ESTÁNDAR Y PEQUEÑO (< 480px)        */
-/* ====================================================== */
-@media screen and (max-width: 480px) {
+/* Media Query: Laptops 1024p */
+@media screen and (min-width: 1024px) {
   .intro {
-    font-size: 40px;
+    font-size: 64px;
+    height: 100vh;
+    background-color: yellow;
+  }
+}
+
+/* Media Query: Desktop FullHD 1280p */
+@media screen and (min-width: 1280px) {
+  .intro {
+    font-size: 96px;
+    background-color: blue;
+  }
+}
+
+/* Media Query: Desktop Grandes 1440p o 1920p */
+@media screen and (min-width: 1440px) {
+  .intro {
+    background-color: pink;
   }
 }

@@ -32,7 +32,7 @@ export default function Home() {
   useEffect(() => {
     const timerId = setTimeout(() => {
       router.push("/inicio");
-    }, 5000);
+    }, 50000);
 
     return () => clearTimeout(timerId);
   }, [router]);
