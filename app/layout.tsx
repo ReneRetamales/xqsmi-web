@@ -22,7 +22,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const viewport: Viewport = {
-  themeColor: "#1A73E8",
+  themeColor: "#ffffff",
 };
 
 export const metadata: Metadata = {
