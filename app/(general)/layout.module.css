@@ -1,4 +1,19 @@
 /* Media Query: Móbiles Pequeños 320p */
+.layout {
+  display: grid;
+  grid-template-rows: 10fr 2fr;
+  height: 100dvh;
+}
+.content {
+  /* display: grid; */
+  /* grid-template-rows: 1fr 11fr; */
+}
+.navbar {
+  /* display: none; */
+}
+.footer {
+  /* height: 100%; */
+}
 
 /* Media Query: Móbiles Grandes 480p */
 @media screen and (min-width: 480px) {
@@ -10,18 +25,9 @@
 
 /* Media Query: Laptops 1024p */
 @media screen and (min-width: 1024px) {
-}
-
-/* Media Query: Desktop FullHD 1280p */
-@media screen and (min-width: 1280px) {
-}
-
-/* Media Query: Desktop Grandes 1440p o 1920p */
-@media screen and (min-width: 1440px) {
   .layout {
     display: grid;
     grid-template-rows: 11fr 1fr;
-    height: 100dvh;
   }
   .content {
     display: grid;
@@ -29,6 +35,7 @@
     align-items: center;
   }
   .navbar {
+    display: inline;
     height: 100%;
     width: 100%;
     text-align: end;
@@ -47,4 +54,12 @@
     height: 100%;
     width: 100%;
   }
+}
+
+/* Media Query: Desktop FullHD 1280p */
+@media screen and (min-width: 1280px) {
+}
+
+/* Media Query: Desktop Grandes 1440p o 1920p */
+@media screen and (min-width: 1440px) {
 }

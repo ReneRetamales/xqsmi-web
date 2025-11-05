@@ -1,4 +1,33 @@
 /* Media Query: Móbiles Pequeños 320p */
+.section {
+  width: 100%;
+  height: 100vh;
+}
+.space {
+  display: none;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem;
+  height: 100%;
+}
+.concepts {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease;
+  display: block;
+}
+.concept {
+  object-fit: cover;
+}
 
 /* Media Query: Móbiles Grandes 480p */
 @media screen and (min-width: 480px) {
@@ -21,16 +50,16 @@
   .section {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    min-height: 100%;
     width: 100%;
+    height: 100%;
   }
-
   .space {
+    display: inline;
   }
-
   .content {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 1rem;

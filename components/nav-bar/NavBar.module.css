@@ -1,4 +1,16 @@
 /* Media Query: Móbiles Pequeños 320p */
+.navbar {
+  background-color: aquamarine;
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+.artistName {
+  margin: 0.5rem;
+  font-size: 24px;
+}
+.sections {
+  font-size: 24px;
+}
 
 /* Media Query: Móbiles Grandes 480p */
 @media screen and (min-width: 480px) {
@@ -10,14 +22,6 @@
 
 /* Media Query: Laptops 1024p */
 @media screen and (min-width: 1024px) {
-}
-
-/* Media Query: Desktop FullHD 1280p */
-@media screen and (min-width: 1280px) {
-}
-
-/* Media Query: Desktop Grandes 1440p o 1920p */
-@media screen and (min-width: 1440px) {
   .navbar {
     /* background-color: greenyellow; */
     display: grid;
@@ -28,7 +32,6 @@
     padding: 1rem;
     position: relative;
   }
-
   .navbar::after {
     background-color: black;
     content: "";
@@ -38,23 +41,19 @@
     top: 7.5%;
     height: 85%;
   }
-
   .title {
-    font-size: 64px;
     font-weight: bold;
     text-align: center;
   }
-
   .artistName {
+    font-size: 64px;
     transition: transform 0.3s ease;
     display: block;
   }
-
   .artistName:hover {
     transform: scale(1.05);
     z-index: 10;
   }
-
   .sections {
     display: flex;
     flex-direction: column;
@@ -62,4 +61,15 @@
     gap: 1rem;
     justify-content: center;
   }
+  .close {
+    display: none;
+  }
+}
+
+/* Media Query: Desktop FullHD 1280p */
+@media screen and (min-width: 1280px) {
+}
+
+/* Media Query: Desktop Grandes 1440p o 1920p */
+@media screen and (min-width: 1440px) {
 }

@@ -1,6 +1,5 @@
 /* Media Query: Móbiles Pequeños 320p */
 .intro {
-  background-color: aqua;
   display: flex;
   justify-content: center;
   text-align: center;
