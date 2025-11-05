@@ -1,15 +1,36 @@
 /* Media Query: Móbiles Pequeños 320p */
 .navbar {
-  background-color: aquamarine;
-  display: flex;
-  /* flex-direction: row-reverse; */
+  /* background-color: aquamarine; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  height: 100%;
+  margin: 0 0.5rem;
+  align-items: center;
+}
+.navbar::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .artistName {
-  margin: 0.5rem;
-  font-size: 24px;
+  font-size: 32px;
 }
 .sections {
+  display: none;
   font-size: 24px;
+}
+.space {
+  display: flex;
+  justify-content: end;
 }
 
 /* Media Query: Móbiles Grandes 480p */
@@ -23,13 +44,13 @@
 /* Media Query: Laptops 1024p */
 @media screen and (min-width: 1024px) {
   .navbar {
-    /* background-color: greenyellow; */
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
-    align-items: center;
     width: 100%;
     height: 100%;
     padding: 1rem;
+    margin: 0;
     position: relative;
   }
   .navbar::after {
@@ -37,8 +58,8 @@
     content: "";
     position: absolute;
     width: 1px;
-    right: 0;
     top: 7.5%;
+    left: 100%;
     height: 85%;
   }
   .title {
@@ -59,6 +80,7 @@
     flex-direction: column;
     font-size: 32px;
     gap: 1rem;
+    width: 100%;
     justify-content: center;
   }
   .close {

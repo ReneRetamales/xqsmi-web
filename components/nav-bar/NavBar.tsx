@@ -22,7 +22,7 @@ export const NavBar = async () => {
 
       <div className={styles.sections}>
         {navItems.map((navItem) => (
-            <ActiveLink key={navItem.path} {...navItem} />
+          <ActiveLink key={navItem.path} {...navItem} />
         ))}
       </div>
 

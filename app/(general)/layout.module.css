@@ -5,14 +5,19 @@
   height: 100dvh;
 }
 .content {
-  /* display: grid; */
-  /* grid-template-rows: 1fr 11fr; */
+  /* background-color: blue; */
+  display: grid;
+  grid-template-rows: 1fr 9fr;
 }
 .navbar {
+  /* background-color: aquamarine; */
+  /* position: relative; */
   /* display: none; */
 }
-.footer {
-  /* height: 100%; */
+.main {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 /* Media Query: Móbiles Grandes 480p */
@@ -32,6 +37,7 @@
   .content {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: none;
     align-items: center;
   }
   .navbar {
