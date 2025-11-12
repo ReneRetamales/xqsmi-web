@@ -1,14 +1,12 @@
 /* Media Query: Móbiles Pequeños 320p */
 .navbar {
-  /* background-color: aquamarine; */
-  /* display: flex; */
-  /* justify-content: space-between; */
+  cursor: none;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
   position: relative;
   height: 100%;
-  margin: 0 0.5rem;
+  margin: 0rem 0.5rem;
   align-items: center;
 }
 .navbar::after {
@@ -25,12 +23,39 @@
   font-size: 32px;
 }
 .sections {
-  display: none;
-  font-size: 24px;
-}
-.space {
+  background-color: white;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  text-align: end;
+  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  font-size: 40px;
+  /* gap: 0.5rem; */
+  justify-content: space-around;
+  padding: 0;
+}
+.sections.active {
+  height: 50dvh;
+}
+.sections.active::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.close {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Media Query: Móbiles Grandes 480p */
@@ -67,7 +92,7 @@
     text-align: center;
   }
   .artistName {
-    font-size: 64px;
+    font-size: 96px;
     transition: transform 0.3s ease;
     display: block;
   }
@@ -76,15 +101,27 @@
     z-index: 10;
   }
   .sections {
-    display: flex;
+    /* Reseteamos los estilos de móvil para que se comporte como sidebar */
+    position: static;
+    height: 100%;
+    transition: none; /* Desactivamos la transición/animación de despliegue */
     flex-direction: column;
-    font-size: 32px;
+    font-size: 40px;
     gap: 1rem;
     width: 100%;
     justify-content: center;
+    overflow: visible;
+    background-color: transparent;
   }
+  
+  /* Ya no necesitamos la clase .active en escritorio, pero la mantenemos por si acaso */
+  .sections.active {
+    height: 100%;
+    padding: 0;
+  }
+
   .close {
-    display: none;
+    display: none; /* Ocultamos el ícono de hamburguesa */
   }
 }
 

@@ -1,4 +1,33 @@
 /* Media Query: Móbiles Pequeños 320p */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.space {
+  height: 10%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0rem 0.5rem;
+  height: 100%;
+}
+.title {
+  width: 100%;
+  font-size: 24px;
+}
+.text {
+  font-size: 16px;
+}
+.signature {
+  width: 100%;
+  text-align: end;
+  font-size: 20px;
+  font-style: italic;
+}
 
 /* Media Query: Móbiles Grandes 480p */
 @media screen and (min-width: 480px) {
@@ -10,14 +39,6 @@
 
 /* Media Query: Laptops 1024p */
 @media screen and (min-width: 1024px) {
-}
-
-/* Media Query: Desktop FullHD 1280p */
-@media screen and (min-width: 1280px) {
-}
-
-/* Media Query: Desktop Grandes 1440p o 1920p */
-@media screen and (min-width: 1440px) {
   .section {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -26,13 +47,14 @@
   }
 
   .space {
+    height: 100%;
   }
 
   .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
+    margin: 0rem 1rem;
     gap: 2rem;
   }
   .title {
@@ -45,7 +67,15 @@
   .signature {
     width: 100%;
     text-align: end;
-    font-size: 24px;
+    font-size: 32px;
     font-style: italic;
   }
+}
+
+/* Media Query: Desktop FullHD 1280p */
+@media screen and (min-width: 1280px) {
+}
+
+/* Media Query: Desktop Grandes 1440p o 1920p */
+@media screen and (min-width: 1440px) {
 }

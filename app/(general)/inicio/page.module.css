@@ -1,27 +1,24 @@
-/* Media Query: Móbiles Pequeños 320p */
+/* Media Query: Móbiles Pequeños 320p (Estilos Base) */
 .section {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 .space {
-  /* background-color: bisque; */
   height: 10%;
-  /* display: none; */
 }
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
   margin: 0rem 0.5rem;
   height: 100%;
 }
 .title {
-  font-size: 48px;
+  font-size: 40px;
 }
 .player {
   border: 1px solid;
@@ -29,31 +26,26 @@
   border-radius: 0.5rem;
 }
 .links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
   font-size: 32px;
+  width: 100%;
 }
 
 /* Media Query: Móbiles Grandes 480p */
 @media screen and (min-width: 480px) {
+  /* Vacío, no hay cambios respecto a 320p */
 }
 
 /* Media Query: Tablets 768p */
 @media screen and (min-width: 768px) {
+  /* Vacío, no hay cambios respecto a 320p */
 }
 
 /* Media Query: Laptops 1024p */
 @media screen and (min-width: 1024px) {
-}
-
-/* Media Query: Desktop FullHD 1280p */
-@media screen and (min-width: 1280px) {
-}
-
-/* Media Query: Desktop Grandes 1440p o 1920p */
-@media screen and (min-width: 1440px) {
   .section {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -61,28 +53,20 @@
     width: 100%;
   }
   .space {
-    display: inline;
     height: 100%;
   }
   .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 1rem;
     gap: 1rem;
+    margin: 0rem 1rem;
+    text-align: center;
   }
   .title {
     width: 100%;
-    font-size: 48px;
   }
   .links {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 5rem;
-    font-size: 32px;
-    width: 100%;
+    justify-content: space-around;
   }
   .navLink {
     transition: transform 0.3s ease;
@@ -91,5 +75,25 @@
   .navLink:hover {
     transform: scale(1.05);
     z-index: 10;
+  }
+}
+
+/* Media Query: Desktop FullHD 1280p */
+@media screen and (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+  .links {
+    font-size: 36px;
+  }
+}
+
+/* Media Query: Desktop Grandes 1440p o 1920p */
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 64px;
+  }
+  .links {
+    font-size: 40px;
   }
 }

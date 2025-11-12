@@ -3,19 +3,21 @@
 import Link from "next/link";
 import style from "./ActiveLink.module.css";
 import { usePathname } from "next/navigation";
+import { ComponentPropsWithoutRef } from "react";
 
-interface Props {
+interface Props extends ComponentPropsWithoutRef<"a"> {
   path: string;
   text: string;
 }
 
-export const ActiveLink = ({ path, text }: Props) => {
+export const ActiveLink = ({ path, text, ...rest }: Props) => {
   const pathName = usePathname();
 
   return (
     <Link
       className={`${style.link} ${pathName === path && style["active-link"]}`}
       href={path}
+      {...rest}
     >
       {text}
     </Link>

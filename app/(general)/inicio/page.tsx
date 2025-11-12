@@ -41,8 +41,8 @@ export default function InicioPage() {
           src="https://www.youtube.com/watch?v=l1c62LuLg7I"
           controls={true}
           width="100%"
-          height="65%"
-          fallback={<div>Cargando reproductor...</div>}
+          height="62.5%"
+          fallback={<div>Cargando...</div>}
         />
 
         <div className={styles.links}>
