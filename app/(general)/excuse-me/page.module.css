@@ -10,8 +10,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
   margin: 0rem 0.5rem;
   height: 100%;
 }
@@ -45,11 +44,9 @@
     height: 100%;
     width: 100%;
   }
-
   .space {
     height: 100%;
   }
-
   .content {
     display: flex;
     flex-direction: column;
