@@ -69,7 +69,7 @@ export default function MusicaPage() {
             </div>
 
             <div className={styles.links}>
-              <div>
+              <div className={styles.subtitle}>
                 <span>Escuchar en:</span>
               </div>
               <div className={styles.linkItems}>
@@ -96,7 +96,7 @@ export default function MusicaPage() {
             </div>
 
             <div className={styles.links}>
-              <div>
+              <div className={styles.subtitle}>
                 <span>Escuchar en:</span>
               </div>
               <div className={styles.linkItems}>
