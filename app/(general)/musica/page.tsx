@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 
 const linkItemsSingle = [
   {
-    url: "https://music.youtube.com/playlist?list=OLAK5uy_miaT0lDySRrF8gxszGisD0fD0b2hir6XE&si=10JAHddOAx9vBZlY",
+    url: "https://music.youtube.com/watch?v=qGKZA9kl31o&si=yVF8gLICYQDGqjDP",
     text: "ytmusic",
   },
   {
-    url: "https://open.spotify.com/intl-es/track/1zEYL5afjQZ9N8J0aJf2ry?si=d91532ad2f6f4938",
+    url: "https://open.spotify.com/intl-es/track/1zEYL5afjQZ9N8J0aJf2ry?si=792fdfa508744b1c",
     text: "spotify",
   },
   {
@@ -24,18 +24,18 @@ const linkItemsSingle = [
     text: "apple music",
   },
   {
-    url: "https://tidal.com/album/466605291/u",
+    url: "https://tidal.com/track/466605292/u",
     text: "tidal",
   },
 ];
 
 const linkItemsEp = [
   {
-    url: "https://music.youtube.com/playlist?list=OLAK5uy_miaT0lDySRrF8gxszGisD0fD0b2hir6XE&si=10JAHddOAx9vBZlY",
+    url: "https://music.youtube.com/watch?v=qGKZA9kl31o&si=yVF8gLICYQDGqjDP",
     text: "ytmusic",
   },
   {
-    url: "https://open.spotify.com/intl-es/track/1zEYL5afjQZ9N8J0aJf2ry?si=d91532ad2f6f4938",
+    url: "https://open.spotify.com/intl-es/track/1zEYL5afjQZ9N8J0aJf2ry?si=792fdfa508744b1c",
     text: "spotify",
   },
   {
@@ -43,7 +43,7 @@ const linkItemsEp = [
     text: "apple music",
   },
   {
-    url: "https://tidal.com/album/466605291/u",
+    url: "https://tidal.com/track/466605292/u",
     text: "tidal",
   },
 ];

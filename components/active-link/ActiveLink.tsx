@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import style from "./ActiveLink.module.css";
+import styles from "./ActiveLink.module.css";
 import { usePathname } from "next/navigation";
 import { ComponentPropsWithoutRef } from "react";
 
@@ -15,7 +15,7 @@ export const ActiveLink = ({ path, text, ...rest }: Props) => {
 
   return (
     <Link
-      className={`${style.link} ${pathName === path && style["active-link"]}`}
+      className={`${styles.link} ${pathName === path && styles["active-link"]}`}
       href={path}
       {...rest}
     >

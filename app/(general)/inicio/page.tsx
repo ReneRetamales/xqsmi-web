@@ -1,5 +1,5 @@
-import ReactPlayer from "react-player";
 import type { Metadata } from "next";
+import ReactPlayer from "react-player";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -14,15 +14,15 @@ const linkItems = [
     text: "youtube",
   },
   {
-    url: "https://music.youtube.com/channel/UCKxDEtNl5qBPjFiEsCfZWbg",
+    url: "https://music.youtube.com/watch?v=qGKZA9kl31o&si=yVF8gLICYQDGqjDP",
     text: "ytmusic",
   },
   {
-    url: "https://open.spotify.com/intl-es/artist/0zzc0r0CLFvWCIJE8mvUIw",
+    url: "https://open.spotify.com/intl-es/track/1zEYL5afjQZ9N8J0aJf2ry?si=792fdfa508744b1c",
     text: "spotify",
   },
   {
-    url: "https://music.apple.com/cl/artist/xqsmi/1844206979",
+    url: "https://music.apple.com/cl/song/flores-y-perdones/1845943167",
     text: "apple music",
   },
 ];
