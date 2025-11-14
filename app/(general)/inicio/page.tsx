@@ -1,4 +1,3 @@
-import React from "react";
 import ReactPlayer from "react-player";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
@@ -40,6 +39,7 @@ export default function InicioPage() {
           className={styles.player}
           src="https://www.youtube.com/watch?v=l1c62LuLg7I"
           controls={true}
+          playing={false}
           width="100%"
           height="62.5%"
           fallback={<div>Cargando...</div>}
