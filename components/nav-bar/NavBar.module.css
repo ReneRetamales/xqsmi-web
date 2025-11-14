@@ -1,6 +1,5 @@
 /* Media Query: Móbiles Pequeños 320p */
 .navbar {
-  cursor: none;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
@@ -36,7 +35,6 @@
   text-align: end;
   transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
   font-size: 40px;
-  /* gap: 0.5rem; */
   justify-content: space-around;
   padding: 0;
 }
@@ -101,10 +99,9 @@
     z-index: 10;
   }
   .sections {
-    /* Reseteamos los estilos de móvil para que se comporte como sidebar */
     position: static;
     height: 100%;
-    transition: none; /* Desactivamos la transición/animación de despliegue */
+    transition: none;
     flex-direction: column;
     font-size: 40px;
     gap: 1rem;
@@ -113,15 +110,12 @@
     overflow: visible;
     background-color: transparent;
   }
-  
-  /* Ya no necesitamos la clase .active en escritorio, pero la mantenemos por si acaso */
   .sections.active {
     height: 100%;
     padding: 0;
   }
-
   .close {
-    display: none; /* Ocultamos el ícono de hamburguesa */
+    display: none;
   }
 }
 
