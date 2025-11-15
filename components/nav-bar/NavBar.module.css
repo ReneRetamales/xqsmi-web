@@ -33,13 +33,14 @@
   overflow: hidden;
   z-index: 10;
   text-align: end;
-  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  transition: height 0.1s ease-in-out, padding 0.1s ease-in-out;
   font-size: 40px;
   justify-content: space-around;
   padding: 0;
 }
 .sections.active {
   height: 50dvh;
+  transition: height 0.3s ease-in, padding 0.3s ease-in;
 }
 .sections.active::after {
   background-color: black;
