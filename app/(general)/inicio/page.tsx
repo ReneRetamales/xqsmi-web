@@ -10,10 +10,6 @@ export const metadata: Metadata = {
 
 const linkItems = [
   {
-    url: "https://www.youtube.com/watch?v=l1c62LuLg7I",
-    text: "youtube",
-  },
-  {
     url: "https://music.youtube.com/watch?v=qGKZA9kl31o&si=yVF8gLICYQDGqjDP",
     text: "ytmusic",
   },
@@ -24,6 +20,10 @@ const linkItems = [
   {
     url: "https://music.apple.com/cl/song/flores-y-perdones/1845943167",
     text: "apple music",
+  },
+  {
+    url: "https://tidal.com/track/466605292/u",
+    text: "tidal",
   },
 ];
 
