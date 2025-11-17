@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     "Sin Mirar Atrás",
     "Espejismos",
     "Espejismos EP",
-    "Rock Latino",
     "Rock",
     "Rock Latino",
     "Rock en Español",
@@ -59,7 +58,7 @@ export const metadata: Metadata = {
     siteName: "XqsMi",
     images: [
       {
-        url: "../public/images/og-image.png",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "XqsMi - Música Oficial",
@@ -71,10 +70,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "XqsMi | Música y Artista Oficial",
+    title: "XqsMi | Artista y Música Oficial",
     description:
       "Escucha la nueva música de XqsMi, incluyendo 'Flores y Perdones' en todas las plataformas.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/og-image.png"],
   },
 };
 
