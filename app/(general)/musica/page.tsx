@@ -58,7 +58,7 @@ export default function MusicaPage() {
           <Image
             className={styles.covers}
             src={singleCover}
-            alt="Flores Y Perdones Cover"
+            alt="Portada de Single Flores y Perdones"
             width={2048}
             height={2048}
           />
@@ -118,7 +118,7 @@ export default function MusicaPage() {
           <Image
             className={styles.covers}
             src={epCover}
-            alt="Espejismos Cover"
+            alt="Portada de EP Espejismos"
             width={2048}
             height={2048}
           />
