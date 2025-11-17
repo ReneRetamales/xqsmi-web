@@ -59,8 +59,8 @@ export default function MusicaPage() {
             className={styles.covers}
             src={singleCover}
             alt="Flores Y Perdones Cover"
-            width={250}
-            height={250}
+            width={2048}
+            height={2048}
           />
 
           <div className={styles.text}>
@@ -119,8 +119,8 @@ export default function MusicaPage() {
             className={styles.covers}
             src={epCover}
             alt="Espejismos Cover"
-            width={250}
-            height={250}
+            width={2048}
+            height={2048}
           />
         </div>
       </div>
